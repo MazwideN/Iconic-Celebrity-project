@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iconic celebrity</title>
+    <script src="https://kit.fontawesome.com/a186845013.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -57,7 +58,7 @@
         left: 65%;
         transform: translate(-50%, -50%);
       }
-
+      
       .btn-branding {
         background-color: white;
         color: black;
@@ -90,8 +91,104 @@
         margin: 0 auto;
         max-width: 800px;
         background-color: rgba(0, 0, 0, 0.113);
-        padding: 20px;
+        padding: 30px;
       }
+      .primary-link {
+        border-radius: 50px;
+        padding: 20px 15px;
+        text-decoration: none;
+        text-transform: capitalize;
+        background: rgba(0, 0, 0, 0.616);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        color: white;
+        font-size: 14px;
+      } 
+      .primary-link:hover{
+        background-color: white;
+        color: black;
+      }
+      .projects-container{
+        margin: 60px auto;
+        max-width: 800px;
+      }
+      .creator {
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  color: #ffffff;
+}
+
+.creator li {
+  list-style: none;
+}
+
+.creator a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+      .mega-list-section{
+        padding: 50px 50px;
+      }
+      .mega-list-section h2{
+        text-align: center;
+        font-weight: 900;
+        margin-top: 0;
+        color: black;
+        text-shadow: 0 0 15px;
+        font-size: 30px;
+      }
+      
+      hr {
+        margin: 20px auto;
+        width: 20%;
+        border: 0;
+        height: 4px;
+        background-image: linear-gradient(to right, rgba(255, 224, 130, 0), rgba(24, 22, 22, 0.86), rgba(255, 255, 255, 0));;
+      }
+      
+  .farewell {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 0 20px; 
+  box-sizing: border-box;
+  background-color: red;
+}
+
+.text h1,
+.text h2,
+.text h3 {
+  margin: 0;
+}
+
     </style>
   </head>
   <body>
@@ -150,6 +247,7 @@
         </div>
       </div>
     </div>
+
     <div class="container mt-5" id="awards">
       <div class="row mt-4">
         <div class="col-6">
@@ -189,5 +287,35 @@
             </ul>
           </div>
         </div>
-  </body>
+        </div>
+       
+      <ul class="creator">
+  <li>
+    <a href="#">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+</ul>
+
+        <div class="farewell">
+  <div class="container">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/903/original/00621416_a46a19aea81ebae8de77d9df7ca94eab_arc614x376_w735_us1.jpg?1709791762" alt="">
+    <div class="text">
+      <h1>REST IN PEACE</h1>
+      <h2>AKA</h2>
+      <h3>"LONG LIVE SUPER MEGA, LIVE LONG"</h3>
+    </div>
+  </div>
+</div>
+</body>
 </html>
